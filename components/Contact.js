@@ -93,13 +93,13 @@ const Contact = () => {
         method: 'POST',
         headers: {
           Accept: 'text/plain',
-          Authorization: 'Basic ZmE0MGNiYzUtYjljMC00YzFlLTgyZTAtYjhjNzUyYzMyYmJi', //개발서버
-          //Authorization: 'Basic NGE1Zjk1MDAtZGUyYS00OGExLTg4YWItZGQ2NDJhZGFkOGFj', //실서버
+          //Authorization: 'Basic ZmE0MGNiYzUtYjljMC00YzFlLTgyZTAtYjhjNzUyYzMyYmJi', //개발서버
+          Authorization: 'Basic NGE1Zjk1MDAtZGUyYS00OGExLTg4YWItZGQ2NDJhZGFkOGFj', //실서버
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          app_id: "ed203017-82b0-43f9-ac75-e39079746cb5", //개발서버
-          //app_id: "516b2e1c-1f27-4c68-b639-b2d82617d697", //실서버
+          //app_id: "ed203017-82b0-43f9-ac75-e39079746cb5", //개발서버
+          app_id: "516b2e1c-1f27-4c68-b639-b2d82617d697", //실서버
           //included_segments: ['Subscribed Users'],
           contents: {ko:'(개발)문의해주셔서 감사합니다.빠른 시일내에 답변해드리겠습니다.😀', en: 'Welcome !! :)'},
           name: '자동 환영 메시지',
