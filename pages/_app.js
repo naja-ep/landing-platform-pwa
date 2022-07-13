@@ -24,8 +24,8 @@ function MyApp({ Component, pageProps }) {
     window.OneSignal = window.OneSignal || [];
     OneSignal.push(function() {
       OneSignal.SERVICE_WORKER_PARAM = { scope: '/onesignal/' };
-      OneSignal.SERVICE_WORKER_PATH = 'push/onesignal/OneSignalSDKWorker.js';
-      OneSignal.SERVICE_WORKER_UPDATER_PATH = 'push/onesignal/OneSignalSDKUpdaterWorker.js';
+      OneSignal.SERVICE_WORKER_PATH = '/OneSignalSDKWorker.js';
+      OneSignal.SERVICE_WORKER_UPDATER_PATH = '/OneSignalSDKUpdaterWorker.js';
       OneSignal.init({
         appId: "03c2259c-7a26-47e7-b52e-42aa1a947070", //실서버
         //appId: "ed203017-82b0-43f9-ac75-e39079746cb5", //개발서버
