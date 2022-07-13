@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     window.OneSignal = window.OneSignal || [];
     OneSignal.push(function() {
-      OneSignal.SERVICE_WORKER_PARAM = { scope: '/onesignal/' };
+      OneSignal.SERVICE_WORKER_PARAM = { scope: '/' };
       OneSignal.SERVICE_WORKER_PATH = '/OneSignalSDKWorker.js';
       OneSignal.SERVICE_WORKER_UPDATER_PATH = '/OneSignalSDKUpdaterWorker.js';
       OneSignal.init({
