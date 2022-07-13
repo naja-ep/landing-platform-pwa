@@ -84,22 +84,22 @@ const Contact = () => {
       
       ## Authorization에 삽입
       # 개발서버 Rest api key(220629 발급) : ZmE0MGNiYzUtYjljMC00YzFlLTgyZTAtYjhjNzUyYzMyYmJi
-      # 실서버 Rest api key(220630 발급) : NGE1Zjk1MDAtZGUyYS00OGExLTg4YWItZGQ2NDJhZGFkOGFj
+      # 실서버 Rest api key(220713 발급) : MGI4NmIzNDItYjE4ZS00MDMwLTk3YjYtZjQ0ZjQzNTc0NGNk
       
       # 개발서버 Appid(앱이름:landing-platform-dev) : ed203017-82b0-43f9-ac75-e39079746cb5
-      # 실서버 Appid(앱이름:landing-platform) : 516b2e1c-1f27-4c68-b639-b2d82617d697
+      # 실서버 Appid(앱이름:landing-platform-pwa) : 03c2259c-7a26-47e7-b52e-42aa1a947070
     */
       const pushOptions = {
         method: 'POST',
         headers: {
           Accept: 'text/plain',
           //Authorization: 'Basic ZmE0MGNiYzUtYjljMC00YzFlLTgyZTAtYjhjNzUyYzMyYmJi', //개발서버
-          Authorization: 'Basic NGE1Zjk1MDAtZGUyYS00OGExLTg4YWItZGQ2NDJhZGFkOGFj', //실서버
+          Authorization: 'Basic MGI4NmIzNDItYjE4ZS00MDMwLTk3YjYtZjQ0ZjQzNTc0NGNk', //실서버
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          //app_id: "ed203017-82b0-43f9-ac75-e39079746cb5", //개발서버
-          app_id: "516b2e1c-1f27-4c68-b639-b2d82617d697", //실서버
+          app_id: "ed203017-82b0-43f9-ac75-e39079746cb5", //개발서버
+          //app_id: "03c2259c-7a26-47e7-b52e-42aa1a947070", //실서버
           //included_segments: ['Subscribed Users'],
           contents: {ko:'(개발)문의해주셔서 감사합니다.빠른 시일내에 답변해드리겠습니다.😀', en: 'Welcome !! :)'},
           name: '자동 환영 메시지',
