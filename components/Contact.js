@@ -146,8 +146,8 @@ const Contact = () => {
         </form>
       </div>  
     </section>
-    <hr />
-    <button onClick={isNotification}>알림권한 요청</button>
+    {/* <hr />
+    <button onClick={isNotification}>알림권한 요청</button> */}
     </>
   );
 };

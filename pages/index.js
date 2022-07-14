@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Script from 'next/script'
 import { useEffect } from 'react'
 import styles from '../styles/Home.module.css'
+import Mainvisual from '../components/Mainvisual'
 import Contact from '../components/Contact'
 
 
@@ -18,6 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></Script>
+      <Mainvisual />
       <Contact />
     </>
   )
